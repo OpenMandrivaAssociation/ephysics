@@ -12,6 +12,7 @@ License:	LGPL
 Group:		Graphical desktop/Enlightenment
 Url:		http://trac.enlightenment.org/e/browser/trunk/ephysics
 Source:		%{name}-%{version}.tar.bz2
+Patch0:		ephysics-0.1.99.77544-linkage.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -43,8 +44,10 @@ Headers, static libraries, test programs and documentation for ephysics.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+NOCONFIGURE=yes ./autogen.sh
 %configure --disable-static
 %make
 

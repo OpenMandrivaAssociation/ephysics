@@ -1,0 +1,11 @@
+diff -urN ephysics-0.1.99.77544/src/lib/Makefile.am ephysics-0.1.99.77544-patched/src/lib/Makefile.am
+--- ephysics-0.1.99.77544/src/lib/Makefile.am	2012-10-06 00:26:08.000000000 +1100
++++ ephysics-0.1.99.77544-patched/src/lib/Makefile.am	2012-10-10 13:42:39.759082895 +1100
+@@ -24,6 +24,6 @@
+ libephysics_la_SOURCES = $(base_sources)
+ 
+ libephysics_la_LIBADD = @EPHYSICS_LIBS@ @EVIL_LIBS@ -lm
+-libephysics_la_LDFLAGS = -no-undefined @lt_enable_auto_import@ -version-info @version_info@ @release_info@
++libephysics_la_LDFLAGS = -no-undefined @lt_enable_auto_import@ -version-info @version_info@ @release_info@ -lpthread
+ 
+ EXTRA_DIST = ephysics_private.h ephysics_trimesh.h ephysics_body_materials.h
