@@ -7,7 +7,7 @@
 Summary:	A wrapper between Ecore, Evas and Bullet Physics
 Name:		ephysics
 Version:	0.1.99.%{svnrev}
-Release:	2
+Release:	3
 License:	BSD
 Group:		Graphical desktop/Enlightenment
 Url:		http://trac.enlightenment.org/e/browser/trunk/ephysics
