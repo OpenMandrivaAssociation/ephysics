@@ -10,7 +10,7 @@ Version:	0.1.99.%{svnrev}
 Release:	3
 License:	BSD
 Group:		Graphical desktop/Enlightenment
-Url:		http://trac.enlightenment.org/e/browser/trunk/ephysics
+Url:		https://trac.enlightenment.org/e/browser/trunk/ephysics
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		ephysics-0.1.99.77544-linkage.patch
 BuildRequires:	autoconf
